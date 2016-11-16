@@ -14,11 +14,11 @@ zypper refresh
 zypper install clamsap
 ```
 This will automatically install clamav + clamsap
+Check with "clamscan" that clamav is installed correctly. If not you need to download the signature files with freshclam.
 
 ## VSI test tool
 ftp://ftp.sap.com/pub/icc/nw-vsi/VSA-SDK-2.0.zip
 You can also use the vsi.jar within this repository.
-
 
 # Platforms
 Supported platforms: **Windows** | **Linux** 
@@ -27,10 +27,10 @@ Supported platforms: **Windows** | **Linux**
 # Java command line example
 Java command line example
 ```
-java -jar vsi.jar info -V /usr/local/lib/libclamsap.so
+java -jar vsi.jar info -V /usr/lib64/libclamsap.so -cfg vsi.properties
 ```
 You need to import the VSA_LIB. VSA_LIB is the path and name to a Virus Scan Adapter.
-Example: You have installed clamd + clamsap (https://sourceforge.net/projects/clamsap/). The VSA name is libclamdsap.so, which its default location is /usr/local/lib/libclamdsap.so. Therefore enter /usr/local/lib/libclamdsap.so in the input field VSA_LIB.
+Example: You have installed clamd + clamsap (https://sourceforge.net/projects/clamsap/). The VSA name is libclamdsap.so, which its default location is /usr/lib64/libclamsap.so. Therefore enter /usr/lib64/libclamsap.so in the input field VSA_LIB.
 
 
 
