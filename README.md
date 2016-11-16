@@ -13,6 +13,12 @@ zypper addrepo http://download.opensuse.org/repositories/security/SLE_11_SP3/sec
 zypper refresh
 zypper install clamsap
 ```
+SLES12.1 commands:
+```
+zypper addrepo http://download.opensuse.org/repositories/security/SLE_12_SP1/security.repo
+zypper refresh
+zypper install clamsap
+```
 This will automatically install clamav + clamsap
 Check with "clamscan" that clamav is installed correctly. If not you need to download the signature files with freshclam.
 
@@ -29,6 +35,11 @@ Java command line example
 ```
 java -jar vsi.jar info -V /usr/lib64/libclamsap.so -cfg vsi.properties
 ```
+Java test scan of EICAR, which is included into vsi.jar
+```
+java -jar vsi.jar scanbytes EICAR
+```
+
 You need to import the VSA_LIB. VSA_LIB is the path and name to a Virus Scan Adapter.
 Example: You have installed clamd + clamsap (https://sourceforge.net/projects/clamsap/). The VSA name is libclamdsap.so, which its default location is /usr/lib64/libclamsap.so. Therefore enter /usr/lib64/libclamsap.so in the input field VSA_LIB.
 
