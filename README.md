@@ -7,15 +7,15 @@ First install a VSI compatible product. What does it mean? In gernal it is a sta
 The Virus Scan Adapter for clamav is called ClamSAP. For SLES it is quite easy to setup it, because you simply can install it with OS installer, see:
 https://software.opensuse.org/download.html?project=security&package=clamsap
 
-SLES11.3 commands:
+SLES11.4 commands:
 ```
-zypper addrepo http://download.opensuse.org/repositories/security/SLE_11_SP3/security.repo
+zypper addrepo http://download.opensuse.org/repositories/security/SLE_11_SP4/security.repo
 zypper refresh
 zypper install clamsap
 ```
-SLES12.1 commands:
+SLES12.4 commands:
 ```
-zypper addrepo http://download.opensuse.org/repositories/security/SLE_12_SP1/security.repo
+zypper addrepo http://download.opensuse.org/repositories/security/SLE_12_SP4/security.repo
 zypper refresh
 zypper install clamsap
 ```
