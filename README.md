@@ -1,4 +1,4 @@
-# Example Setup for ClamSAP on SLES11/12
+# Example Setup for ClamSAP on SLES11/12/15
 
 VSI in context of SAP stands for Virus Scan Inferface, see https://launchpad.support.sap.com/#/notes/817623 
 
@@ -7,23 +7,29 @@ First install a VSI compatible product. What does it mean? In gernal it is a sta
 The Virus Scan Adapter for clamav is called ClamSAP. For SLES it is quite easy to setup it, because you simply can install it with OS installer, see:
 https://software.opensuse.org/download.html?project=security&package=clamsap
 
-SLES11.4 commands:
+SLES 11.4 commands:
 ```
 zypper addrepo http://download.opensuse.org/repositories/security/SLE_11_SP4/security.repo
 zypper refresh
 zypper install clamsap
 ```
-SLES12.4 commands:
+SLES 12.4 commands:
 ```
 zypper addrepo http://download.opensuse.org/repositories/security/SLE_12_SP4/security.repo
 zypper refresh
 zypper install clamsap
 ```
+SLES 15.5 commands:
+```
+zypper addrepo http://download.opensuse.org/repositories/security/SLE_12_SP5/security.repo
+zypper refresh
+zypper install clamsap
+```
 This will automatically install clamav + clamsap
 Check with "clamscan" that clamav is installed correctly. If not you need to download the signature files with freshclam.
+After the installation you should to "sudo freshclam". This will download the signatures and should help in using the clamav command.
 
 ## VSI test tool
-ftp://ftp.sap.com/pub/icc/nw-vsi/VSA-SDK-2.0.zip
 You can also use the vsi.jar within this repository.
 
 # Platforms
