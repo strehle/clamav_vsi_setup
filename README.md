@@ -9,19 +9,19 @@ https://software.opensuse.org/download.html?project=security&package=clamsap
 
 SLES 11.4 commands:
 ```
-zypper addrepo http://download.opensuse.org/repositories/security/SLE_11_SP4/security.repo
+zypper addrepo https://download.opensuse.org/repositories/security/SLE_11_SP4/security.repo
 zypper refresh
 zypper install clamsap
 ```
 SLES 12.4 commands:
 ```
-zypper addrepo http://download.opensuse.org/repositories/security/SLE_12_SP4/security.repo
+zypper addrepo https://download.opensuse.org/repositories/security/SLE_12_SP4/security.repo
 zypper refresh
 zypper install clamsap
 ```
 SLES 15.5 commands:
 ```
-zypper addrepo http://download.opensuse.org/repositories/security/SLE_12_SP5/security.repo
+zypper addrepo https://download.opensuse.org/repositories/security/SLE_12_SP5/security.repo
 zypper refresh
 zypper install clamsap
 ```
