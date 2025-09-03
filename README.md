@@ -1,4 +1,4 @@
-# Example Setup for ClamSAP on SLES11/12/15
+# Example Setup for ClamSAP on SLES 12/15 and newer
 
 VSI in context of SAP stands for Virus Scan Inferface, see https://launchpad.support.sap.com/#/notes/817623 
 
